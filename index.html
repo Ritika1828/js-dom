@@ -1,177 +1,210 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>JS DOM Project</title>
+  </head>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <title>JS DOM Project</title>
- 
-</head>
+  <body>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
 
-<body>
-  <script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-analytics.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-  
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-      apiKey: "AIzaSyD3PBR31B3p_E4L5rKhM-8Ir5uV5LoOz_s",
-      authDomain: "js-dom-project.firebaseapp.com",
-      projectId: "js-dom-project",
-      storageBucket: "js-dom-project.appspot.com",
-      messagingSenderId: "109095810353",
-      appId: "1:109095810353:web:1a81db237bcb9f685b2c10",
-      measurementId: "G-Q550J88NGM"
-    };
-  
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-  </script>
-  <nav>
-    <a href="./index.html">Home</a>
-    <input type="text" id="searchInput" placeholder="Search projects">
-  </nav>
-  <main>
-    <h1>List of Project (JS DOM Manupulation)</h1>
-    <div class="projects">
-      <div class="project-link completed">
-        <i class="fas fa-check-circle" title="completed"></i>
-        <a class="text-decoration" href="./bg-color-changer/index.html">Color Changer</a>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyD3PBR31B3p_E4L5rKhM-8Ir5uV5LoOz_s",
+        authDomain: "js-dom-project.firebaseapp.com",
+        projectId: "js-dom-project",
+        storageBucket: "js-dom-project.appspot.com",
+        messagingSenderId: "109095810353",
+        appId: "1:109095810353:web:1a81db237bcb9f685b2c10",
+        measurementId: "G-Q550J88NGM",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+    <nav>
+      <a href="./index.html">Home</a>
+      <input type="text" id="searchInput" placeholder="Search projects" />
+    </nav>
+    <main>
+      <h1>List of Project (JS DOM Manupulation)</h1>
+
+      <div class="projects">
+        <div class="project-link new">
+          <i class="fas fa-exclamation-circle" title="New"></i>
+          <a class="text-decoration" href="./public/accordian/index.html">
+            Accordian</a
+          >
+        </div>
+        <div class="project-link new">
+          <i class="fas fa-exclamation-circle" title="New"></i>
+          <a
+            class="text-decoration"
+            href="./public/accordian-single/index.html"
+          >
+            Accordian single</a
+          >
+        </div>
+        <div class="project-link new">
+          <i class="fas fa-exclamation-circle" title="New"></i>
+          <a class="text-decoration" href="./public/modal-overlay/index.html">
+            Modal Popover</a
+          >
+        </div>
+        <div class="project-link completed">
+          <i class="fas fa-check-circle" title="completed"></i>
+          <a class="text-decoration" href="./bg-color-changer/index.html"
+            >Color Changer</a
+          >
+        </div>
+
+        <div class="project-link completed">
+          <i class="fas fa-check-circle" title="completed"></i>
+          <a class="text-decoration" href="./BMI-generator/index.html"
+            >BMI Generator</a
+          >
+        </div>
+
+        <div class="project-link completed">
+          <i class="fas fa-check-circle" title="completed"></i>
+          <a class="text-decoration" href="./digital-clock/index.html"
+            >Digital clock</a
+          >
+        </div>
+
+        <div class="project-link completed">
+          <i class="fas fa-check-circle" title="completed"></i>
+          <a class="text-decoration" href="./search-filter/index.html"
+            >Search filter</a
+          >
+        </div>
+
+        <div class="project-link completed">
+          <i class="fas fa-check-circle" title="completed"></i>
+          <a class="text-decoration" href="./table/index.html">Table</a>
+        </div>
+
+        <div class="project-link completed">
+          <i class="fas fa-check-circle" title="completed"></i>
+          <a class="text-decoration" href="./accordion/index.html">Accordion</a>
+        </div>
+
+        <div class="project-link completed">
+          <i class="fas fa-check-circle" title="completed"></i>
+          <a class="text-decoration" href="./counter/index.html">Counter</a>
+        </div>
+
+        <div class="project-link in-progress">
+          <i class="fas fa-spinner" title="In Progress"></i>
+          <a class="text-decoration" href="./stopwatch/index.html">Stopwatch</a>
+        </div>
+
+        <div class="project-link completed">
+          <i class="fas fa-check-circle" title="completed"></i>
+          <a class="text-decoration" href="./Modal/index.html">Modal</a>
+        </div>
+
+        <div class="project-link in-progress">
+          <i class="fas fa-spinner" title="In Progress"></i>
+          <a class="text-decoration" href="./countdown timer/index.html"
+            >Countdown Timer</a
+          >
+        </div>
+
+        <div class="project-link new">
+          <i class="fas fa-exclamation-circle" title="New"></i>
+          <a class="text-decoration">Keyboard check</a>
+        </div>
+
+        <div class="project-link completed">
+          <i class="fas fa-check-circle" title="completed"></i>
+          <a class="text-decoration" href="./unlimited-color/index.html"
+            >Unlimited Colors</a
+          >
+        </div>
+
+        <div class="project-link completed">
+          <i class="fas fa-check-circle" title="completed"></i>
+          <a class="text-decoration" href="./dropdown/index.html">Dropdown</a>
+        </div>
+
+        <div class="project-link new">
+          <i class="fas fa-exclamation-circle" title="New"></i>
+          <a class="text-decoration">Slider</a>
+        </div>
+
+        <div class="project-link new">
+          <i class="fas fa-exclamation-circle" title="New"></i>
+          <a class="text-decoration"> Pagination </a>
+        </div>
+
+        <div class="project-link new">
+          <i class="fas fa-exclamation-circle" title="New"></i>
+          <a class="text-decoration"> Telephone Formatter </a>
+        </div>
+
+        <div class="project-link new">
+          <i class="fas fa-exclamation-circle" title="New"></i>
+          <a class="text-decoration"> Password Generator </a>
+        </div>
+
+        <div class="project-link new">
+          <i class="fas fa-exclamation-circle" title="New"></i>
+          <a class="text-decoration"> Todo List </a>
+        </div>
+
+        <div class="project-link new">
+          <i class="fas fa-exclamation-circle" title="New"></i>
+          <a class="text-decoration"> Star Rating </a>
+        </div>
+
+        <div class="project-link new">
+          <i class="fas fa-exclamation-circle" title="New"></i>
+          <a class="text-decoration"> Chess Board </a>
+        </div>
+
+        <div class="project-link new">
+          <i class="fas fa-exclamation-circle" title="New"></i>
+          <a class="text-decoration"> Calculator </a>
+        </div>
+
+        <div class="project-link new">
+          <i class="fas fa-exclamation-circle" title="New"></i>
+          <a class="text-decoration"> Progress Bar </a>
+        </div>
+
+        <div class="project-link new">
+          <i class="fas fa-exclamation-circle" title="New"></i>
+          <a class="text-decoration"> OTP Input </a>
+        </div>
+
+        <div class="project-link new">
+          <i class="fas fa-exclamation-circle" title="New"></i>
+          <a class="text-decoration"> JS Array method </a>
+        </div>
+
+        <div class="project-link new">
+          <i class="fas fa-exclamation-circle" title="New"></i>
+          <a class="text-decoration">
+            scrolling ( up/down button in long page and Endless page)</a
+          >
+        </div>
       </div>
-
-      <div class="project-link completed">
-        <i class="fas fa-check-circle" title="completed"></i>
-        <a class="text-decoration" href="./BMI-generator/index.html">BMI Generator</a>
-      </div>
-
-      <div class="project-link completed">
-        <i class="fas fa-check-circle" title="completed"></i>
-        <a class="text-decoration" href="./digital-clock/index.html">Digital clock</a>
-      </div>
-
-      <div class="project-link completed">
-        <i class="fas fa-check-circle" title="completed"></i>
-        <a class="text-decoration" href="./search-filter/index.html">Search filter</a>
-      </div>
-
-      <div class="project-link completed">
-        <i class="fas fa-check-circle" title="completed"></i>
-        <a class="text-decoration" href="./table/index.html">Table</a>
-      </div>
-
-      <div class="project-link completed">
-        <i class="fas fa-check-circle" title="completed"></i>
-        <a class="text-decoration" href="./accordion/index.html">Accordion</a>
-      </div>
-
-      <div class="project-link completed">
-        <i class="fas fa-check-circle" title="completed"></i>
-        <a class="text-decoration" href="./counter/index.html">Counter</a>
-      </div>
-
-      <div class="project-link in-progress">
-        <i class="fas fa-spinner" title="In Progress"></i>
-        <a class="text-decoration" href="./stopwatch/index.html">Stopwatch</a>
-      </div>
-
-      <div class="project-link completed">
-        <i class="fas fa-check-circle" title="completed"></i>
-        <a class="text-decoration" href="./Modal/index.html">Modal</a>
-      </div>
-
-      <div class="project-link in-progress">
-        <i class="fas fa-spinner" title="In Progress"></i>
-        <a class="text-decoration" href="./countdown timer/index.html">Countdown Timer</a>
-      </div>
-
-   
-
-      <div class="project-link new">
-        <i class="fas fa-exclamation-circle" title="New"></i>
-        <a class="text-decoration">Keyboard check</a>
-      </div>
-
-      <div class="project-link completed">
-        <i class="fas fa-check-circle" title="completed"></i>
-        <a class="text-decoration" href="./unlimited-color/index.html">Unlimited Colors</a>
-      </div>
-
-      <div class="project-link completed">
-        <i class="fas fa-check-circle" title="completed"></i>
-        <a class="text-decoration" href="./dropdown/index.html">Dropdown</a>
-      </div>
-
-      <div class="project-link new">
-        <i class="fas fa-exclamation-circle" title="New"></i>
-        <a class="text-decoration">Slider</a>
-      </div>
-
-      <div class="project-link new">
-        <i class="fas fa-exclamation-circle" title="New"></i>
-        <a class="text-decoration"> Pagination </a>
-      </div>
-
-      <div class="project-link new">
-        <i class="fas fa-exclamation-circle" title="New"></i>
-        <a class="text-decoration"> Telephone Formatter </a>
-      </div>
-
-      <div class="project-link new">
-        <i class="fas fa-exclamation-circle" title="New"></i>
-        <a class="text-decoration"> Password Generator </a>
-      </div>
-
-      <div class="project-link new">
-        <i class="fas fa-exclamation-circle" title="New"></i>
-        <a class="text-decoration"> Todo List </a>
-      </div>
-
-      <div class="project-link new">
-        <i class="fas fa-exclamation-circle" title="New"></i>
-        <a class="text-decoration"> Star Rating </a>
-      </div>
-
-      <div class="project-link new">
-        <i class="fas fa-exclamation-circle" title="New"></i>
-        <a class="text-decoration"> Chess Board </a>
-      </div>
-
-      <div class="project-link new">
-        <i class="fas fa-exclamation-circle" title="New"></i>
-        <a class="text-decoration"> Calculator </a>
-      </div>
-
-      <div class="project-link new">
-        <i class="fas fa-exclamation-circle" title="New"></i>
-        <a class="text-decoration"> Progress Bar </a>
-      </div>
-
-      <div class="project-link new">
-        <i class="fas fa-exclamation-circle" title="New"></i>
-        <a class="text-decoration"> OTP Input </a>
-      </div>
-
-      <div class="project-link new">
-        <i class="fas fa-exclamation-circle" title="New"></i>
-        <a class="text-decoration"> JS Array method </a>
-      </div>
-
-      <div class="project-link new">
-        <i class="fas fa-exclamation-circle" title="New"></i>
-        <a class="text-decoration">
-          scrolling ( up/down button in long page and Endless page)</a>
-      </div>
-    </div>
-  </main>
-  <script src="./index.js"></script>
-</body>
-
+    </main>
+    <script src="./index.js"></script>
+  </body>
 </html>
 
 <!-- 
