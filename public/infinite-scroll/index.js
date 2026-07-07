@@ -11,7 +11,6 @@ function renderList(data) {
     p.textContent = item.body;
     div.classList.add("list");
 
-
     div.appendChild(h5);
     div.appendChild(p);
     list.appendChild(div);
@@ -35,9 +34,9 @@ async function fetchData() {
 }
 const observer = new IntersectionObserver(
   (e) => {
-    console.log(e)
+    console.log(e);
     if (e[0].isIntersecting && !loading) {
-       console.log(e,'iss')
+      console.log(e, "iss");
       page++;
       fetchData();
     }
@@ -48,6 +47,6 @@ const observer = new IntersectionObserver(
   },
 );
 
-fetchData();
+(() => fetchData())();
 
 observer.observe(last);
