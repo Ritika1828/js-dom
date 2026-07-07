@@ -1,35 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="../style.css" />
     <title>BMI Calculator</title>
-</head>
+  </head>
 
-<body class="body">
+  <body class="body">
     <nav>
-        <a href="../index.html">Home</a>
+      <a href="../index.html">Home</a>
     </nav>
     <div class="container">
-        <h1>BMI Calculator</h1>
-        <div>
-            <form>
-                <p><label>Height in CM: </label><input type="text" id="height" /></p>
-                <p><label>Weight in KG: </label><input type="text" id="weight" /></p>
-                <button id="calculate">Calculate</button>
-                <button id="reset">Reset</button>
-                <div id="results"></div>
-            </form>
-            <div id="weight-guide">
-                <h3>BMI Weight Guide</h3>
-                <p>Under Weight = Less than 18.6</p>
-                <p>Normal Range = 18.6 and 24.9</p>
-                <p>Overweight = Greater than 24.9</p>
-            </div>
+      <h1>BMI Calculator</h1>
+      <div>
+        <form>
+          <p><label>Height in CM: </label><input type="text" id="height" /></p>
+          <p><label>Weight in KG: </label><input type="text" id="weight" /></p>
+          <button id="calculate">Calculate</button>
+          <button id="reset">Reset</button>
+          <div id="results"></div>
+        </form>
+        <div id="weight-guide">
+          <div id="res"></div>
+          <h3>BMI Weight Guide</h3>
+          <p>Under Weight = Less than 18.6</p>
+          <p>Normal Range = 18.6 and 24.9</p>
+          <p>Overweight = Greater than 24.9</p>
         </div>
+      </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>
